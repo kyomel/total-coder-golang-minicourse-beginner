@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"calculator/calculate"
+	"fmt"
+)
 
 func main() {
-	fmt.Println("hello from the printname app")
+	result := calculate.Add(10, 11)
+	fmt.Println("hello from the printname app", result)
 }
